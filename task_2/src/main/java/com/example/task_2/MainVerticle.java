@@ -15,7 +15,7 @@ public class MainVerticle extends AbstractVerticle {
     Router router = Router.router(vertx);
     // Deploying the MongoDBVerticle
     JsonObject mongoConfig = new JsonObject()
-            .put("connection_string", "mongodb+srv://KranthiGuribilli:Iudx%40517@cluster0.fd7xe8x.mongodb.net/")
+            .put("connection_string", "urlToconnectDB")
             .put("db_name", "iot_data");
     MongoDBVerticle mongoDBVerticle = new MongoDBVerticle(vertx, mongoConfig);
     vertx.deployVerticle(mongoDBVerticle, mongoDeployment -> {
