@@ -1,0 +1,100 @@
+[{
+  "deviceId": "abc-123-def",
+  "Domain": "healthcare",
+  "state": "MH",
+  "city": "Mumbai",
+  "location": {
+    "Type": "point",
+    "Coordinates": [19.07, 72.87]
+  },
+  "deviceType": "health-monitor"
+},
+{
+  "deviceId": "xyz-456-uvw",
+  "Domain": "home-automation",
+  "state": "KA",
+  "city": "Bengaluru",
+  "location": {
+    "Type": "point",
+    "Coordinates": [12.97, 77.59]
+  },
+  "deviceType": "smart-thermostat"
+},
+{
+  "deviceId": "pqr-789-mno",
+  "Domain": "agriculture",
+  "state": "GJ",
+  "city": "Ahmedabad",
+  "location": {
+    "Type": "point",
+    "Coordinates": [23.02, 72.58]
+  },
+  "deviceType": "soil-moisture-sensor"
+},
+{
+  "deviceId": "mno-987-pqr",
+  "Domain": "energy-management",
+  "state": "DL",
+  "city": "New Delhi",
+  "location": {
+    "Type": "point",
+    "Coordinates": [28.61, 77.23]
+  },
+  "deviceType": "smart-meter"
+},
+{
+  "deviceId": "uvw-654-xyz",
+  "Domain": "security",
+  "state": "KA",
+  "city": "Mysore",
+  "location": {
+    "Type": "point",
+    "Coordinates": [12.30, 76.65]
+  },
+  "deviceType": "surveillance-camera"
+},
+{
+  "deviceId": "ijk-321-lmn",
+  "Domain": "transportation",
+  "state": "TN",
+  "city": "Chennai",
+  "location": {
+    "Type": "point",
+    "Coordinates": [13.08, 80.27]
+  },
+  "deviceType": "vehicle-tracker"
+},
+{
+  "deviceId": "andhra-001",
+  "Domain": "agriculture",
+  "state": "AP",
+  "city": "Vijayawada",
+  "location": {
+    "Type": "point",
+    "Coordinates": [16.51, 80.62]
+  },
+  "deviceType": "crop-monitor"
+},
+{
+  "deviceId": "telangana-001",
+  "Domain": "smart-city",
+  "state": "TS",
+  "city": "Hyderabad",
+  "location": {
+    "Type": "point",
+    "Coordinates": [17.39, 78.48]
+  },
+  "deviceType": "smart-light"
+},
+{
+  "deviceId": "andhra-002",
+  "Domain": "healthcare",
+  "state": "AP",
+  "city": "Visakhapatnam",
+  "location": {
+    "Type": "point",
+    "Coordinates": [17.69, 83.20]
+  },
+  "deviceType": "patient-monitor"
+}]
+
