@@ -1,4 +1,35 @@
-= Task_2
+= Task_2: Device datastore CRUD APIs (REST API + DB + vertx framework)
+ 
+
+Create a simple REST API backend using vert.x framework for IoT devices datastore
+which will store all the details related to IoT devices. The application should provide an API
+interface to add, update, delete, and get device details.
+
+Sample device details JSON:
+
+
+{
+  "deviceId":"123-asdasd-123",
+  "Domain":"smart-transport",
+  "state":"MH",
+  "city":"Pune",
+  "location":{
+      "Type":"point",
+      "Coordinates":[34.56,76.34]
+    },
+  "deviceType":"smart-camera"
+}.
+
+ 
+
+== ToDo’s:
+* APIs must provide an interface for CRUD operations.
+* Use a database for storing details (MongoDB).
+* Try to demonstrate the use of Future & Promise.
+* Complete Junit test cases.
+* Create a Postman collection to test APIs.
+
+
 
 image:https://img.shields.io/badge/vert.x-4.4.5-purple.svg[link="https://vertx.io"]
 
