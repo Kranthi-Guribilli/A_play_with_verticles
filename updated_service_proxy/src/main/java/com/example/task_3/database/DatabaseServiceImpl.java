@@ -31,8 +31,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 
   @Override
   public void addDevice(JsonObject device, Handler<AsyncResult<String>> resultHandler) {
-    // Implement your logic to add device to MongoDB
-    // Example:
     JsonObject document = device;
     mongoClient.insert("devices", document, ar -> {
       if (ar.succeeded()) {
@@ -45,8 +43,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 
   @Override
   public void updateDevice(JsonObject device, Handler<AsyncResult<String>> resultHandler) {
-    // Implement your logic to update device in MongoDB
-    // Example:
     String deviceId = device.getString("deviceId");
     JsonObject query = new JsonObject().put("deviceId", deviceId);
     JsonObject update = device;
@@ -61,8 +57,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 
   @Override
   public void deleteDevice(String deviceId, Handler<AsyncResult<String>> resultHandler) {
-    // Implement your logic to delete device from MongoDB
-    // Example:
     JsonObject query = new JsonObject().put("deviceId", deviceId);
     mongoClient.removeDocument("devices", query, ar -> {
       if (ar.succeeded()) {
