@@ -14,10 +14,10 @@ import io.vertx.serviceproxy.ServiceProxyBuilder;
 @VertxGen
 @ProxyGen
 public interface DatabaseService{
+  
+  @GenIgnore
   static DatabaseService createProxy(Vertx vertx, String address) {
-    return new ServiceProxyBuilder(vertx)
-      .setAddress(address)
-      .build(DatabaseService.class);
+    return new DatabaseServiceVertxEBProxy(vertx, address);
   }
 
   void getDevice(String deviceId, Handler<AsyncResult<JsonObject>> resultHandler);
