@@ -18,8 +18,9 @@ public class RestAPIVerticle extends AbstractVerticle {
   public void start() {
     Router router = Router.router(vertx);
 
-    ServiceProxyBuilder builder = new ServiceProxyBuilder(vertx).setAddress("device-service");
-    databaseService = builder.build(DatabaseService.class);
+    /*ServiceProxyBuilder builder = new ServiceProxyBuilder(vertx).setAddress("device-service");
+    databaseService = builder.build(DatabaseService.class);*/
+    databaseService =DatabaseService.createProxy(vertx,"device-service");
 
     router.route().handler(BodyHandler.create());
 
